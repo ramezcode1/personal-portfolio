@@ -19,11 +19,10 @@ export default function ProjectPage({params}) {
             <div className=" w-screen h-[30vh] lg:h-[40vh] relative">
                 <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/60 z-10"/>
                 <Image
-                    className="absolute z-1"
-                    layout="fill"
-                    objectFit="cover"
+                    className="absolute z-1 object-cover"
+                    fill={true}
                     src={backgroundImg}
-                    alt="/"
+                    alt="project image"
                 />
                 <div
                     className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 px-6 md:px-10 lg:px-12">
@@ -62,15 +61,15 @@ export default function ProjectPage({params}) {
                         <div className="p-2">
                             <p className="text-center font-bold pb-2">Technologies</p>
                             <div className="grid grid-cols-3 md:grid-cols-1">
-                                {techStack.map(tech => (
-                                    <p className="text-gray-600 py-2 flex items-center">
+                                {techStack.map((tech, index) => (
+                                    <div key={index} className="text-gray-600 py-2 flex items-center">
                                         <RiRadioButtonFill className="pr-1"/> {tech}
-                                    </p>
+                                    </div>
                                 ))}
                             </div>
                         </div>
                     </div>
-                    <Link href="/#projects">
+                    <Link href="/#projects" scroll={false}>
                         <p className="underline cursor-pointer text-blue-500">Back</p>
                     </Link>
                 </div>

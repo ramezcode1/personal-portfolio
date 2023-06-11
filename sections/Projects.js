@@ -2,7 +2,7 @@ import ProjectItem from "@/components/ProjectItem";
 
 import {projectList} from "@/data/projectList";
 
-export default function Projects() {
+export default async function Projects() {
     return (
         <div id="projects" className="bg-gradient-to-b from-gray-800 to-black">
             <div className="container">
@@ -14,6 +14,7 @@ export default function Projects() {
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {projectList.map((project, index) => (
                             <ProjectItem
+                                key={index}
                                 title={project.title}
                                 backgroundImg={project.backgroundImg}
                                 urlParam={project.urlParam}

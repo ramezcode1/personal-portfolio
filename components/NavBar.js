@@ -12,15 +12,11 @@ const NavBar = () => {
     const pathname = usePathname();
 
     useEffect(() => {
-        if (
-            pathname === "/photography" ||
-            pathname === "/crypto" ||
-            pathname === "/cookbook" ||
-            pathname === "/dex"
+        if (pathname === "/"
         ) {
-            setNavBg("bg-transparent");
-        } else {
             setNavBg("bg-stone-900/80 backdrop-blur");
+        } else {
+            setNavBg("bg-stone-900/20");
         }
     }, [pathname]);
 
@@ -30,7 +26,7 @@ const NavBar = () => {
         <div className={"flex justify-between items-center w-full h-20 px-10 text-white fixed" +
                         " drop-shadow-[0px_7px_5px_rgba(8,145,178,0.1)] z-[100] " + navBg}>
             <div>
-                <Link href="/#home">
+                <Link href="#home" scroll={false}>
                     <TbHexagonLetterR size="4em" className="stroke-cyan-400 stroke-1 hover:scale-110"/>
                 </Link>
             </div>
@@ -41,7 +37,7 @@ const NavBar = () => {
                         key={index}
                         className="px-4 cursor-pointer capitalize font-semibold text-slate-300 hover:scale-110 hover:text-cyan-400 duration-200"
                     >
-                        <Link href={`/#${link}`}>
+                        <Link href={`#${link}`} scroll={false}>
                             {link}
                         </Link>
                     </li>
@@ -62,7 +58,7 @@ const NavBar = () => {
                             key={index}
                             className="px-4 cursor-pointer capitalize py-6 text-4xl"
                         >
-                            <Link href={`/#${link}`}
+                            <Link href={`#${link}`} scroll={false}
                                 onClick={() => setNav(!nav)}
                             >
                                 {link}

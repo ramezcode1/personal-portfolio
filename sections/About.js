@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import AboutAnimation from "@/lotties/hooks/AboutAnimation";
+import LottieAnimation from "@/lotties-hook/LottieAnimation";
 
 export default function About() {
     return (
@@ -29,7 +29,7 @@ export default function About() {
                     </div>
                     <div
                         className="w-full h-auto m-auto shadow-gray-400 flex items-center justify-center p-4 hover:scale-110 ease-in-out duration-300">
-                        <AboutAnimation/>
+                        <LottieAnimation filename="about-me.json"/>
                     </div>
                 </div>
             </div>

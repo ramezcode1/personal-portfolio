@@ -1,12 +1,12 @@
 import SquigglyLines from "@/components/SquigglyLines";
 import Link from "next/link";
-import WebDevAnimation from "@/lotties/hooks/WebDevAnimation";
+import LottieAnimation from "@/lotties-hook/LottieAnimation";
 
 export default function Header() {
     return (
         <div id="home" className="bg-gradient-to-b from-black to-gray-800">
             <div className="container">
-                <div className="md:grid grid-cols-3 gap-8 mt-16 sm:mt-20 px-6 md:px-10 lg:px-12">
+                <div className="w-full md:grid grid-cols-3 gap-8 mt-16 sm:mt-20 px-6 md:px-10 lg:px-12">
                     <div className="col-span-2 flex flex-col justify-center h-full background-gradient">
                         <p className="text-gray-300 text-3xl font-bold py-4">Hi, I'm</p>
                         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-normal text-gray-300">
@@ -41,7 +41,7 @@ export default function Header() {
                     </div>
                     <div
                         className="w-full h-auto shadow-gray-400 hidden md:flex items-start justify-center -mt-10 p-4 hover:scale-110 ease-in-out duration-300">
-                        <WebDevAnimation/>
+                        <LottieAnimation filename="webdev.json"/>
                     </div>
                 </div>
             </div>
