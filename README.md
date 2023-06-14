@@ -1,3 +1,6 @@
+## Description
+This is a React based personal portfolio. Built on the Next.js framework, styled with Tailwind css. The data are populated from a single file, you can easily create, customize the content in minutes. I added some animation to make the experience more playful. This site is fully responsive optimized with server-side rendered to ensure fast loading and a clean UI on any device.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
