@@ -17,6 +17,8 @@ import {
     SiMysql,
     SiMongodb,
     SiGit,
+    SiCsharp,
+    SiDotnet
 } from 'react-icons/si';
 import {DiJava} from 'react-icons/di';
 
@@ -30,6 +32,8 @@ export const skillList = [
     {name: 'Next.js', IconImage: SiNextdotjs, color: '#000000'},
     {name: 'Java', IconImage: DiJava, color: '#5b7d99'},
     {name: 'Spring Boot', IconImage: SiSpring, color: '#5b7d99'},
+    {name: 'C#', IconImage: SiCsharp, color: '#3f8b2b'},
+    {name: 'ASP.NET Core', IconImage: SiDotnet, color: '#522e88'},
     {name: 'PHP', IconImage: SiPhp, color: '#000000'},
     {name: 'Laravel', IconImage: SiLaravel, color: '#e3402e'},
     {name: 'Node.js', IconImage: SiNodedotjs, color: '#5E9254'},

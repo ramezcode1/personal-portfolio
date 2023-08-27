@@ -4,8 +4,18 @@ import newsApp from "@/public/projects/newsApp.png";
 import hotelMgmt from "@/public/projects/hotelMgmt.png";
 import blackJack from "@/public/projects/blackJack.png";
 import eBookStore from "@/public/projects/eBookStore.png";
+import bookShop from "@/public/projects/bookShop.png";
 
 export const projectList = [
+    {
+        title: "Ecommerce BookShop",
+        backgroundImg: bookShop,
+        urlParam: 'bookShop',
+        techStack: ['c#', 'ASP.NET Core 7', 'MySQL', 'Bootstrap'],
+        hrefLive: "https://aspnet-bookshop-541f487dea3b.herokuapp.com/",
+        hrefCode: "https://github.com/ramezcode1/AspNetCoreBookShop",
+        description: "A fully responsive eCommerce website for selling books. Customers are able to displaying a list of books with their titles, authors, and prices. Add book to shopping cart. Admin Panel page that gives you full control over books and categories."
+    },
     {
         title: "API Movie",
         backgroundImg: movieDB,
